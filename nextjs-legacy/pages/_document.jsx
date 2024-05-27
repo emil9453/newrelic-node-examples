@@ -26,6 +26,8 @@ class RootDocument extends Document {
 			allowTransactionlessInjection: true,
 		});
 
+		console.log(process.env.NEW_RELIC_LICENSE_KEY, 'NEW_RELIC_LICENSE_KEY');
+
 		logger.info('NextJs New Relic redirecting to a page', {
 			application: 'NextJs NewRelic app logging',
 			test: 'Testing logging with Winston',
