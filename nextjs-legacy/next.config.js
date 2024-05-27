@@ -1,5 +1,8 @@
 'use strict'
 
+if (process.env.NODE_ENV === "production") {
+  require("newrelic");
+}
 const nrExternals = require('@newrelic/next/load-externals')
 
 module.exports = {
